@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子育て申請書ダウンロード | 天草市役所</title>
+    <style>
+        /* デザインの定義（CSS） */
+        :root {
+            --main-color: #2c7fb8; /* 清潔感のあるブルー */
+            --bg-color: #f8fbfd;
+            --text-color: #333;
+            --accent-color: #e67e22; /* 補足用のソフトなオレンジ */
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--main-color);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .category-section {
+            background: var(--white);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .category-title {
+            display: flex;
+            align-items: center;
+            font-size: 1.25rem;
+            color: var(--main-color);
+            border-bottom: 2px solid var(--main-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .category-title::before {
+            content: "●";
+            margin-right: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .file-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+        }
+
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .file-item:last-child {
+            border-bottom: none;
+        }
+
+        .file-item:hover {
+            background-color: #f0f7ff;
+        }
+
+        .file-info {
+            flex: 1;
+        }
+
+        .file-name {
+            display: block;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .file-meta {
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        .download-btn {
+            background-color: var(--main-color);
+            color: var(--white);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: opacity 0.2s;
+            white-space: nowrap;
+            margin-left: 1rem;
+        }
+
+        .download-btn:hover {
+            opacity: 0.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        /* レスポンシブ対応：スマホ表示 */
+        @media (max-width: 600px) {
+            .file-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .download-btn {
+                margin-left: 0;
+                margin-top: 0.5rem;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>天草市 子育て申請書ダウンロード</h1>
+    <p>必要な書類をダウンロードして印刷し、窓口へお持ちください</p>
+</header>
+
+<main>
+    <section class="category-section">
+        <h2 class="category-title">手当・助成金</h2>
+        <ul class="file-list">
+            <li class="file-item">
+                <div class="file-info">
+                    <span class="file-name">児童手当 認定請求書</span>
+                    <span class="file-meta">PDF / 150KB</span>
+                </div>
+                <a href="pdf/allowance_01.pdf" class="download-btn" download>ダウンロード</a>
+            </li>
+            <li class="file-item">
+                <div class="file-info">
+                    <span class="file-name">子ども医療費 受給資格届</span>
+                    <span class="file-meta">PDF / 120KB</span>
+                </div>
+                <a href="pdf/medical_01.pdf" class="download-btn" download>ダウンロード</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="category-section">
+        <h2 class="category-title">健診・予防接種</h2>
+        <ul class="file-list">
+            <li class="file-item">
+                <div class="file-info">
+                    <span class="file-name">乳幼児健診 アンケート票</span>
+                    <span class="file-meta">PDF / 200KB</span>
+                </div>
+                <a href="pdf/health_check_01.pdf" class="download-btn" download>ダウンロード</a>
+            </li>
+            <li class="file-item">
+                <div class="file-info">
+                    <span class="file-name">予防接種予診票 交付申請書</span>
+                    <span class="file-meta">PDF / 180KB</span>
+                </div>
+                <a href="pdf/vaccine_01.pdf" class="download-btn" download>ダウンロード</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="category-section">
+        <h2 class="category-title">保育園・幼稚園</h2>
+        <ul class="file-list">
+            <li class="file-item">
+                <div class="file-info">
+                    <span class="file-name">保育所等入所 申込書（一式）</span>
+                    <span class="file-meta">PDF / 450KB</span>
+                </div>
+                <a href="pdf/nursery_01.pdf" class="download-btn" download>ダウンロード</a>
+            </li>
+            <li class="file-item">
+                <div class="file-info">
+                    <span class="file-name">就労証明書（標準様式）</span>
+                    <span class="file-meta">Excel / 80KB</span>
+                </div>
+                <a href="pdf/work_cert_01.xlsx" class="download-btn" download>ダウンロード</a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Amakusa City. All Rights Reserved.</p>
+    <p>天草市役所 子育て支援課：0969-XX-XXXX</p>
+</footer>
+
+</body>
+</html>
